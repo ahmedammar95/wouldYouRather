@@ -1,0 +1,442 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #252525;
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+}
+.homeselect {
+  max-width: 670px;
+  display: flex;
+  margin: 0 auto;
+}
+.homeselectoption {
+  width: 330px;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.homeselectoptionselected {
+  width: 330px;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  color:#228B22;
+  justify-content: center;
+  align-items: center;
+  background-color:#f8f8ff;
+}
+
+.selector{
+  padding: 5px; 
+  font-size: 2.5rem;
+}
+
+.vr{
+  bwidth: 1px; height: 200; display: inline-block; font-weight: lighter;
+}
+
+h2 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 25px 0 25px;
+   font-weight: lighter;
+} 
+
+.Navh2 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 3px solid #228B22; 
+   line-height: 0.1em;
+   margin: 0 auto;
+   font-weight: bold;
+} 
+
+h2 span { 
+    background:#fff; 
+    padding:0 10px;
+    font-weight: normal;
+}
+
+li:hover {
+    background-color: #228B22;
+    color: white,
+}
+
+
+
+
+.btn {
+  text-transform: uppercase;
+  margin: 35px auto;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,.29);
+  cursor: pointer;
+  background: #fff;
+  font-size: 16px;
+  width: 250px;
+  position: relative;
+}
+
+.btn:hover {
+  border-color: rgba(0,0,0,.5);
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: 0;
+  font-weight: 700;
+  border-width: 2px;
+}
+
+.center {
+  text-align: center;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav ul {
+    padding:0; 
+    margin:0;
+    display: flex;
+    list-style: none;
+    justify-content:center;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: normal;
+  
+}
+
+
+.avatar {
+  height: 80px;
+  border-radius: 40px;
+  margin: 10px;
+}
+
+.question {
+  width: 620px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.question-header {
+  width: 590px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color:#f8f8ff;
+}
+
+.question-body {
+  width: 590px;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+}
+
+.question-img {
+  width: 197px;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+}
+.question-info {
+  width: 392px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.noHover{
+    pointer-events: none;
+}
+.Result-font {
+  width: 392px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.question-text {
+  width: 392px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  font-weight: normal;
+}
+.question-Poll {
+  width: 392px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  font-weight: normal;
+  border: 1px solid #228B22;
+  border-radius: 6px;
+  color:#228B22;
+  background-color:white;
+  cursor: pointer;
+}
+
+.question-Submit {
+  width: 250px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  font-weight: normal;
+  border: 1px solid #228B22;
+  border-radius: 6px;
+  color:white;
+  background-color:#228B22;
+  cursor: pointer;
+}
+
+.question-incorrect {
+  width: 250px;
+  padding: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-top:10;
+  margin-bottom:10;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color:#f8f8ff;
+}
+
+.question-correct {
+  width: 250px;
+  padding: 5px;
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #32CD32;
+  border-radius: 3px;
+  font-weight: bold;
+  color:#228B22;
+  background-color:#AFEEEE;
+}
+
+.numberCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 9px;
+  font-weight: bold;
+  border: 2px solid #DAA520;
+  color:white;
+  background:#DAA520;
+  position: relative;
+  margin:0px;
+  padding:0px;
+  top: -20px;
+  right: -240px;
+}
+
+.NewQuestion-header {
+  width: 590px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.NewQuestion-body {
+  width: 590px;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+}
+
+.user-img {
+  width: 100px;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.user-body {
+  width: 450px;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+}
+
+.user-info {
+  width: 290px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.score {
+  width: 100px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.score-header {
+  width: 50px;
+  height:10px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  bottom-margin:0;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color:#f8f8ff;
+}
+
+.score-body {
+  width: 50px;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+}
+
+.ScoreCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  line-height:20px;
+  font-weight: bold;
+  border: 2px solid #3CB371;
+  color:white;
+  background:#3CB371;
+  position: relative;
+  padding:0px;
+  top: 0px;
+  right: -10px;
+  justify-content: center;
+}
+
+.logout-body {
+  width: 590px;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+}
+
+/* Hacky but less typing in the video */
+.tweet-info > div > span:first-child {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.tweet-info > div > span:nth-child(2) {
+  color: #969696;
+  font-size: 16px;
+}
+.tweet-info > div > div {
+  color: #969696;
+  font-size: 15px;
+}
+.tweet-info > div > p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.tweet-icons {
+  display: flex;
+  align-items: center;
+}
+.tweet-icons > span {
+  color: #969696;
+  margin: 0 15px 0 5px;
+  font-size: 18px !important;
+}
+.tweet-icon {
+  font-size: 27px;
+  color: #697784;
+}
+.tweet-icon:hover {
+  color: #00b5d6;
+  cursor: pointer;
+}
+.replying-to {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  color: #969696;
+  cursor: pointer;
+}
+
+.heart-button {
+  background: transparent;
+  border: none;
+}
+
+.new-tweet {
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  width: 90%;
+  border-radius: 4px;
+  border: 1px solid #dad7d7;
+  padding: 10px;
+  font-size: 15px;
+  height: 30px;
+}
+
+.tweet-length {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #C3392A;
+}
